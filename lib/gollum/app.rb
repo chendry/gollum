@@ -396,7 +396,7 @@ module Precious
       mustache :page
     end
 
-    get '/livepreview/' do
+    get '/livepreview' do
       wiki = wiki_new
       @mathjax = wiki.mathjax
       mustache :livepreview, { :layout => false }
